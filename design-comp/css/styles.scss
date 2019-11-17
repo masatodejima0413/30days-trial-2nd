@@ -198,6 +198,99 @@ body {
 // end card section
 
 
+
+//start heading practice
+
+.heading-container {
+    margin:100px auto;
+    text-align: center;
+
+    h1 {
+        margin:0 auto 30px auto;
+        width: 50%;
+        font-size:1.5rem;
+
+    }
+    .heading-1 {
+        border-bottom: solid 3px $blue;
+    }
+    .heading-2 {
+        border-bottom: dotted 3px $blue;
+    }
+    .heading-3 {
+        background-color: $blue;
+        color:white;
+    }
+    .heading-4 {
+        background-color: #7385E9;
+        box-shadow: 0 3px $blue;
+        color: white;
+    }
+    .heading-5 {
+        border-left: solid 5px $blue;
+    }
+    .heading-6 {
+        background: linear-gradient(to bottom, transparent 70%, #a7d6ff 70%)
+    }
+    .heading-8 {
+        background-color: $blue;
+        position: relative;
+        color: white;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 30px;
+            border: 15px solid transparent;
+            border-top: 15px solid $blue;
+            width:0;
+            height: 0;
+
+        }
+    }
+    .heading-9 {
+        border-bottom:solid 3px $blue;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            border-bottom: solid 3px #ffc778;
+            display:block;
+            // bottom: -3px;
+            width: 30%;
+        }
+    }
+    .heading-10 {
+        position: relative;
+        display: inline-block;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            display:inline-block;
+            width: 5px;
+            height: 20px;
+            background-color: black;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+}
+
+
+
+//end heading practice
+
+
+
+
+
+
+
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
