@@ -197,6 +197,83 @@ body {
 
 // end card section
 
+// start news section
+
+.news-section-container {
+    width: 100%;
+    background-color: white;
+
+    .section-title {
+        text-align: center;
+        font-weight: bold;
+        font-size:60px;
+        padding-top:68px;
+
+        @include tab {
+            font-size:50px;
+        }
+        @include sp {
+            font-size: 35px;
+        }
+    }
+    .section-line {
+        width:50px;
+        background-color:$blue;
+        border:none;
+        height:5px;
+    }
+
+    .news-content {
+        width: 80%;
+        margin: 50px auto 20px auto;
+
+        @include tab {
+            width : 100%;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                border-bottom: 3px solid #EFEFEF;
+                margin: 0;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                p {
+                    margin-bottom : 0;
+                }
+
+                .news-label {
+                    background-color: $blue;
+                    color: white;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                }
+                .news-date {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .news-more {
+        text-align:  center;
+        color:#E81919;
+        margin-bottom: 30px;
+    }
+
+}
+
+// end news section
+
 
 
 //start heading practice
