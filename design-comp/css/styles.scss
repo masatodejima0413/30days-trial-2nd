@@ -382,7 +382,7 @@ body {
     }
 
     .access-content-container {
-        width: 80%;
+        width: 60%;
         margin: 50px auto 0 auto;
 
         .map-wrap {
@@ -433,9 +433,165 @@ body {
 }
 // end access section
 
+// start contact section
 
-// start price section
-// end price section
+.contact-section-container {
+    width: 100%;
+    background-color: #EFEFEF;
+    padding-bottom: 130px;
+
+    .section-title {
+        text-align: center;
+        font-weight: bold;
+        font-size:60px;
+        padding-top:68px;
+
+        @include tab {
+            font-size:50px;
+        }
+        @include sp {
+            font-size: 35px;
+        }
+    }
+    .section-line {
+        width:50px;
+        background-color:$blue;
+        border:none;
+        height:5px;
+    }
+
+    .contact-content-container {
+        width: 60%;
+        margin: 50px auto 0 auto;
+        background-color: white;
+        padding-bottom: 40px;
+
+        .row {
+            margin: 40px;
+            &:first-child {
+                padding-top: 40px;
+            }
+        }
+        .radio-container {
+            input {
+                margin-left: 20px;
+            }
+        }
+        .check-container {
+            justify-content: center;
+        }
+        .contact-button {
+            display: block;
+            text-align: center;
+            width: 250px;
+            margin: 0 auto;
+            margin-top: 30px;
+            background-color: $blue;
+            color:#fff;
+            font-weight: bold;
+            font-size:20px;
+            padding:10px 20px;
+            border-radius: 10px;
+
+            @include tab {
+                // font-size:25px;
+
+            }
+            @include sp {
+                // font-size:20px;
+            }
+        }
+
+    }
+
+    
+
+   
+
+}
+// end contact section
+
+
+// start footer section
+
+.footer-container {
+    background: linear-gradient(to bottom, #666666 0%, #333333 100%);
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 60px 0 20px 0;
+    
+    div {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-left {
+        text-align: center;
+
+        img {
+            margin-bottom: 20px;
+        }
+        p {
+            color: white;
+            opacity: 0.7;
+        }
+
+    }
+
+    .footer-center {
+        ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            opacity: 0.9;
+
+            @include sp {
+                justify-content: space-around;
+            }
+        }
+
+    }
+
+    .footer-right {
+        display: flex;
+        
+        @include sp {
+            justify-content: center;
+        }
+
+        .ball {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+
+            @include sp {
+                margin: 10px;
+            }
+            
+        }
+        .skyblue-ball {
+            background-color:#55ACEE ;
+        }
+        .blue-ball {
+            background-color: #3B5998;
+        }
+        .pink-ball {
+            background-color:#D93177 ;
+        }
+        
+    }
+    .copyright {
+        text-align: center;
+        color: white;
+        opacity: 0.7;
+    }
+    
+}
+
+// end footer section
 // start price section
 // end price section
 
