@@ -274,6 +274,172 @@ body {
 
 // end news section
 
+// start price section
+
+.price-section-container {
+    width: 100%;
+    background-color: #EFEFEF;
+
+    .section-title {
+        text-align: center;
+        font-weight: bold;
+        font-size:60px;
+        padding-top:68px;
+
+        @include tab {
+            font-size:50px;
+        }
+        @include sp {
+            font-size: 35px;
+        }
+    }
+    .section-line {
+        width:50px;
+        background-color:$blue;
+        border:none;
+        height:5px;
+    }
+
+    .price-content-container {
+        width: 80%;
+        justify-content: space-between;
+        margin: 50px auto 0 auto;
+
+        img {
+            padding-bottom: 130px;
+        }
+
+        .table-container {
+            padding-bottom: 130px;
+            .price-table {
+                table-layout: fixed;
+                width: 100%;
+                border:1px solid #707070;
+                border-collapse: collapse;
+                text-align: center;
+                margin-bottom: 10px;
+    
+                th, td {
+    
+                border:1px solid #707070;
+                height: 50px;
+                    
+                }
+                th {
+                    background-color: #999999;
+                    color:white;
+                    font-weight: bold;
+                    font-size: 16px;
+                    &:first-child {
+                        width: 30%;
+                    }
+                }
+                td {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+    }
+
+   
+
+}
+
+
+// end price section
+
+
+
+
+
+// start access section
+
+.access-section-container {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 130px;
+
+    .section-title {
+        text-align: center;
+        font-weight: bold;
+        font-size:60px;
+        padding-top:68px;
+
+        @include tab {
+            font-size:50px;
+        }
+        @include sp {
+            font-size: 35px;
+        }
+    }
+    .section-line {
+        width:50px;
+        background-color:$blue;
+        border:none;
+        height:5px;
+    }
+
+    .access-content-container {
+        width: 80%;
+        margin: 50px auto 0 auto;
+
+        .map-wrap {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            padding-top: 75%; /* = height ÷ width × 100 */
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .access-direction-table {
+            margin-top: 30px;
+        }
+        .map-button {
+            display: block;
+            text-align: center;
+            width: 250px;
+            margin: 0 auto;
+            margin-top: 30px;
+            background-color: $blue;
+            color:#fff;
+            font-weight: bold;
+            font-size:20px;
+            padding:10px 20px;
+            border-radius: 10px;
+
+            @include tab {
+                // font-size:25px;
+
+            }
+            @include sp {
+                // font-size:20px;
+            }
+        }
+
+    }
+
+    
+
+   
+
+}
+// end access section
+
+
+// start price section
+// end price section
+// start price section
+// end price section
+
+
 
 
 //start heading practice
