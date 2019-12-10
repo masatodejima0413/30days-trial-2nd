@@ -26,15 +26,23 @@ body {
 
 .header .header-container {
   width: 100%;
-  background-image: url(../images/mainvisual.png);
-  background-size: cover;
-  background-position: center center;
   height: calc(100vh - 100px);
+  position: relative;
+}
+
+.header .header-container .swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .header .header-container .main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 150px 0 138px 0;
+  z-index: 5;
 }
 
 .header .header-container .main-text .lead-title {

@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" />
 
     <title>30daysトライアル2nd</title>
@@ -55,7 +60,19 @@
 
         <div class="header">
 
-            <div class="header-container">
+            <div class="header-container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/mainvisual.png" alt=""></div>
+                </div>
+                <!-- ページネーション（※省略可） -->
+                <div class="swiper-pagination"></div>
+                <!-- ナビゲーションボタン（※省略可） -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
                 <div class="main-text">
                     <h1 class="lead-title">Webデザイン脱初心者</h1>
                     <h3 class="lead-sentence">HTML・CSSは一通り勉強したけどその後はどうすればいいの・・・<br>と悩む人のためのWebデザイン講座</h3>
@@ -338,7 +355,19 @@
     <!-- end contact section -->
 
 
-
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // ここからオプション
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
